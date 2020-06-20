@@ -1,0 +1,293 @@
+<!-- This file has been modified from Caroline Barrier's original file -->
+
+<!-- Sources: -->
+    <!-- https://www.w3schools.com/bootstrap4/default.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+
+<!-- Images sources: 
+Logo: https://loveleighloops.com/wp-content/uploads/2018/06/L-logo-circle-color.png
+Short: https://content.latest-hairstyles.com/wp-content/uploads/best-short-a-line-bob-haircuts-500x333.jpg
+Medium: https://www.prettydesigns.com/wp-content/uploads/2017/12/fantastic-easy-medium-haircuts-2018-shoulder-length-hairstyles-for-women.jpg
+Long: https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2013/12/13-extra-long-balayage-hairstyle-with-layered-ends.jpg?w=500&ssl=1
+Highlights: https://mr-cdn.imgix.net/content/images/2018/5/jif2zu87-lw-beforeafter-vanilla2/lw-beforeafter-vanilla2.jpeg?w=514.812&h=515.812&fit=crop&crop=faces&dpr=1.7&q=50&auto=format
+Full Colour: https://media.allure.com/photos/5b7c63a635edf9723c64bb27/master/pass/olivia%20smalley%20color%20correct%20before%20and%20after%202%20(1)%20copy.jpg
+Blowdry: https://missysue.com/wp-content/uploads/2016/09/blow-out-at-home-how-to.png
+Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jpg
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lilac Locks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <div class="container-md p-3 my-3">
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center">
+                <img class="logo" src="Cursive-L.png" alt="Logo" style="width:30%">
+		<h1><b>Lilac Locks</b></h1>
+            </div>
+            <div class="col-sm-3 d-flex align-items-center">
+		<h2>Services</h2>
+	    </div>
+            <div class="col-sm-3 d-flex align-items-center">
+		<h2>Book a Visit</h2>
+	    </div>
+            <div class="col-sm-3 d-flex align-items-center">
+		<h2>Contact Us</h2>
+	    </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    
+    <div class="container">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>COVID-19 Update:</strong> We are now open! Fill out the information below to book an appointment
+            immediately. We will respond as soon as possible.
+        </div>
+        
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseService">Choose a Service</a>
+                </div>
+                <div id="collapseService" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <input type="radio" name="content" value="content"> Haircut<br>
+	                    <input type="radio" name="content" value="content"> Haircut & Styling<br>
+                        <input type="radio" name="content" value="content"> Haircut & Styling & Colouring<br>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a Date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2020-06-16T10:00:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Enter your Information</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <input type="text" name="answer" placeholder="Name"><br>
+                        <input type="text" name="answer" placeholder="Email"><br>
+                        <input type="text" name="answer" placeholder="Phone"><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a href="#" class="btn btn-primary">Submit</a>
+    </div>
+        
+    
+    <br>
+
+    <div class="container">
+	<h2><b>For Reference</b></h2>
+	    <p class="container-md p-3 my-3"><b>Hair Lengths</b>
+        	<div class="row">
+           		<div class="col-sm-4" align="center">
+                		<img class="short" src="images/short.jpg" alt="Short Hair" style="width:50%">
+				<p class="text">Short Hair</p> 
+            		</div>
+            		<div class="col-sm-4" align="center">
+				<img class="medium" src="images/medium.jpg" alt="Medium Hair" style="width:40%">
+				<p class="text">Medium Hair</p> 
+			</div>
+            		<div class="col-sm-4" align="center">
+				<img class="long" src="images/long.jpg" alt="Long Hair" style="width:50%">
+				<p class="text">Long Hair</p> 
+			</div>
+        	</div>
+        </p>									  
+	    <p class="container"><b>Hair Styles</b>
+		<div class="row">
+           		<div class="col-sm-6" align="center">
+                		<img class="blowdry" src="images/blowdry.png" alt="Blowdry" style="width:25%">
+				<p class="text">Blowdry</p> 
+            		</div>
+            		<div class="col-sm-6" align="center">
+				<img class="updo" src="images/Updo.jpg" alt="Updo" style="width:25%">
+				<p class="text">Updo</p> 
+			</div>
+        	</div>
+	    </p>
+	<p class="container"><b>Hair Colours</b>
+		<div class="row">
+           		<div class="col-sm-6" align="center">
+                		<img class="highlights" src="images/highlights.jpg" alt="Highlights" style="width:30%">
+				<p class="text">Highlights</p> 
+            		</div>
+            		<div class="col-sm-6" align="center">
+				<img class="Full Colour" src="images/fullcol.jpg" alt="Full Colour" style="width:30%">
+				<p class="text">Full Colour</p> 
+			</div>
+        	</div>
+	</p>
+    </div>
+        
+    <br>
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <div class="container">
+	<h2><b>Our Services</b></h2>           
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Prices</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">Short hair .............. $35</li>
+                        <li class="list-group-item">Medium hair .......... $45</li>
+                        <li class="list-group-item">Long hair ............... $55</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Styling</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">Wash & Blowdry .... $35</li>
+                        <li class="list-group-item">Wash & Updo ........ $75</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Colouring</td>
+                <td>
+                    <ul class="list-group">
+                        <li class="list-group-item">Highlights .............. $100</li>
+                        <li class="list-group-item">Full Colour ............. $125</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        
+    <br>
+    
+    <div class="container">
+	<h2><b>Our Experts</b></h2>
+        <div class="card-columns">
+            <div class="card" style="width:200px height:300px">
+                <div class="card-body">
+                    <h4 class="card-title">Kelly</h4>
+                    <p class="card-text">Kelly has been cutting hair for 8 years. She's been colouring hair for 6 years.
+			She can do any hair style you'd like!</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:200px height:300px">
+                <div class="card-body">
+                    <h4 class="card-title">Jenny</h4>
+                    <p class="card-text">Jenny has been cutting hair for 7 years. 
+			    She takes care of curly hair like no other!</p>
+                    <!-- collapsible part -->
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	    
+    <div class="container p-3 my-3 bg-dark text-white">
+        <div class="row">
+            <div class="col-sm-3" align="center">
+                <img class="logo" src="Cursive-L.png" alt="Logo" style="width:30%">
+		<h1><b>Lilac Locks</b></h1>
+            </div>
+            <div class="col-sm-3" align="center">
+		<h2>Contact Us</h2>
+        	<p>123 Sweetland Ave.</p>
+        	<p>Ottawa ON K1N 1P2</p>
+		<p>info@lilaclocks.com</p>
+        	<p>(613)-123-4567</p>
+		</div>
+	    <div class="col-sm-3" align="center">
+		<h2>Hours</h2>
+		<p>Mon-Fri: 10am - 8pm</p>
+		<p>Sat-Sun: 10am - 6pm</p>   
+	    </div>
+            <div class="col-sm-3" align="center">
+        <!-- Trigger the modal with a button -->
+		 <h2>How Did We Do?</h2>
+        	<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#mySurvey">Take Our Survey</button>
+          
+        <!-- Modal -->
+		<div class="modal fade" id="mySurvey" role="dialog">
+		    <div class="modal-dialog">  
+		    <!-- Modal content-->
+		    <div class="modal-content">
+			<div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			    <div class="container">
+				<h2>How was your experience?</h2>
+				<form>
+				  <div class="checkbox">
+				    <label><input type="checkbox" value=""> Pleasant</label>
+				  </div>
+				  <div class="checkbox">
+				    <label><input type="checkbox" value=""> Frustrating</label>
+				  </div>
+				<div class="input">
+					<label><input type="text" name="answer" placeholder="Comments"></label>
+				</form>
+			    </div>
+			</div>
+			<div class="modal-footer">
+			    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		    </div>     
+		    </div>
+		</div> 
+		</div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p id="signature">Website designed by: Hayley Goodman 8698359</p>
+</footer>
+</html>
