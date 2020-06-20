@@ -1,0 +1,43 @@
+/* This file has been modified from Caroline Barrier's original file.
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+.col img {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.col-sm-3 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: rgb(222,180,222);
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.col-sm-3 h2 {
+  color: rgb(222,180,222);
+   font-size: 22px;
+}
+
+.container h2 {
+   color: rgb(222,180,222);
+   font-size: 22px;
+}
+
+.checkbox {
+   color: black;
+}
+
+.input {
+   color: black;
+}
+
+#signature {
+  text-align: left;
+  color: rgb(222,180,222);
+}
