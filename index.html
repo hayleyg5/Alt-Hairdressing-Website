@@ -39,6 +39,33 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
 
 
 <body>
+	
+	<!-- Using the collapsible Navbar, so we see the hamburger menu icon -->
+	<!-- It really has become a standard. -->
+	<!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
+	<!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
+	<!-- be sections in your page. -->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	  <a class="navbar-brand" href="#">Navbar</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+		<a class="nav-link" href="#reference"><img src="images/peigne.png" alt="logo" style="width:30px;">First</a>
+	      </li> 
+	      <li class="nav-item">
+		<a class="nav-link" href="#services"><img src="images/tiger.png" alt="logo" style="width:30px;">Second</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link" href="#experts">Third</a>
+	      </li>   
+	   </ul>
+	  </div>  
+	</nav>
+	<br>
+	
 
     <!-- Should show the name of your company with an image or logo -->
     <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
@@ -138,7 +165,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
         
     <br>
 
-    <div class="container">
+    <div class="container" id="reference">
 	<h2><b>For Reference</b></h2>
 	    <p class="container-md p-3 my-3"><b>Hair Lengths</b>
         	<div class="row">
@@ -185,7 +212,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
     <br>
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
-    <div class="container">
+    <div class="container" id="services">
 	<h2><b>Our Services</b></h2>           
         <table class="table table-hover">
             <thead>
@@ -229,7 +256,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
         
     <br>
     
-    <div class="container">
+    <div class="container" id="experts">
 	<h2><b>Our Experts</b></h2>
         <div class="card-columns">
             <div class="card" style="width:200px height:300px">
