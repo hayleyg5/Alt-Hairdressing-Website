@@ -71,6 +71,16 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
         </div>
         
         <div id="accordion">
+	     <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseService">Choose an Expert</a>
+                </div>
+                <div id="collapseService" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <input type="radio" name="content" value="content"> Kelly<br>
+	                <input type="radio" name="content" value="content"> Jenny<br>
+                    </div>
+                </div>
             <div class="card">
                 <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseService">Choose a Service</a>
@@ -99,13 +109,25 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Enter your Information</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Enter Contact Information</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <input type="text" name="answer" placeholder="Name"><br>
                         <input type="text" name="answer" placeholder="Email"><br>
                         <input type="text" name="answer" placeholder="Phone"><br>
+                    </div>
+                </div>
+            </div>
+	    <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Enter Payment Information</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <input type="text" name="answer" placeholder="Card Number"><br>
+                        <input type="text" name="answer" placeholder="Expiry Date"><br>
+                        <input type="text" name="answer" placeholder="CVV"><br>
                     </div>
                 </div>
             </div>
