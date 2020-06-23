@@ -4,6 +4,23 @@
 */
 
 /* Bootstrap default font-family is Helvetica Neue */
+ .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.nav-bar h1{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: rgb(222,180,222);
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+   
 .col img {
   float: left;
   width: 50px;
