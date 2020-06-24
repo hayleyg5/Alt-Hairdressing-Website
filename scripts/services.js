@@ -5,7 +5,7 @@
 // https://flaviocopes.com/javascript-regular-expressions/ 
 // Regular expressions can get complex, you can think in terms of a series of characters
 // or numbers
-fucntion validateName(txtName){
+function validateName(txtName){
     var a = document.getElementById(txtName).value;
     var filter = /^[A-Za-z]+$/;
     if (filter.test(a)){
