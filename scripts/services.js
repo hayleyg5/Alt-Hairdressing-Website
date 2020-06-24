@@ -141,14 +141,6 @@ $(document).ready(function(){
     // Look at the different events on which an action can be performed
     // https://www.w3schools.com/jquery/jquery_events.asp
     // Here, we put 
-    $("#debit").on("mouseenter", function(){
-        $("#debit").addClass("showInput");
-    });
-
-    $("#debit").on("mouseleave", function(){
-        $("#debit").removeClass("showInput");
-    });
-    
     $("#name").on("mouseenter", function(){
         $("#name").addClass("showInput");
     });
@@ -156,15 +148,54 @@ $(document).ready(function(){
     $("#name").on("mouseleave", function(){
         $("#name").removeClass("showInput");
     });
+    
+    $("#email").on("mouseenter", function(){
+        $("#email").addClass("showInput");
+    });
+
+    $("#email").on("mouseleave", function(){
+        $("#email").removeClass("showInput");
+    });
+    
+    $("#phone").on("mouseenter", function(){
+        $("#phone").addClass("showInput");
+    });
+
+    $("#phone").on("mouseleave", function(){
+        $("#phone").removeClass("showInput");
+    });
+    
+    $("#card").on("mouseenter", function(){
+        $("#card").addClass("showInput");
+    });
+
+    $("#card").on("mouseleave", function(){
+        $("#card").removeClass("showInput");
+    });
+    
+    $("#date").on("mouseenter", function(){
+        $("#date").addClass("showInput");
+    });
+
+    $("#date").on("mouseleave", function(){
+        $("#date").removeClass("showInput");
+    });
+    
+    $("#cvv").on("mouseenter", function(){
+        $("#cvv").addClass("showInput");
+    });
+
+    $("#cvv").on("mouseleave", function(){
+        $("#cvv").removeClass("showInput");
+    });
   
     // https://jqueryui.com/tooltip/ 
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
-    $("#debit").tooltip({
+    $("#card").tooltip({
         classes: {
           "ui-tooltip": "highlight"
         }
       });
-
 
 });
