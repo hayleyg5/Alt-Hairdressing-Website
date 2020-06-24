@@ -4,7 +4,17 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions 
 // https://flaviocopes.com/javascript-regular-expressions/ 
 // Regular expressions can get complex, you can think in terms of a series of characters
-// or numbers 
+// or numbers
+fucntion validateName(txtName){
+    var a = document.getElementById(txtName).value;
+    var filter = /^[A-Za-z]+$/;
+    if (filter.test(a)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
@@ -37,6 +47,16 @@ function disableDates(date) {
 
 // HERE, JQuery "LISTENING" starts
 $(document).ready(function(){
+    $("#name").on("change", function(){
+        if (!validateName("name")){
+            alert("Wrong format for name");
+            $("#name").val("Jane Doe");
+            $("#name").addClass("error");
+        }
+        else {
+            $("#name").removeClass("error");
+        }
+    });
 
     // phone validation, it calls validatePhone
     // and also some feedback as an Alert + putting a value in the input that shows the format required
