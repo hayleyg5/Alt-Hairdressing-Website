@@ -12,7 +12,7 @@
     margin-top: -6px;
 }
 
-.nav-bar h1{
+.navbar-default .navbar-brand{
   font-family: "Times New Roman", Times, serif;
   font-size: 26px;
   color: rgb(222,180,222);
