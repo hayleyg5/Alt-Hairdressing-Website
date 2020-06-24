@@ -100,9 +100,9 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
         <div id="accordion">
 	     <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseService">Choose an Expert</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseExpert">Choose an Expert</a>
                 </div>
-                <div id="collapseService" class="collapse" data-parent="#accordion">
+                <div id="collapseExpert" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <input type="radio" name="content" value="content"> Kelly<br>
 	                <input type="radio" name="content" value="content"> Jenny<br>
@@ -115,7 +115,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
                 <div id="collapseService" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <input type="radio" name="content" value="content"> Haircut<br>
-	                    <input type="radio" name="content" value="content"> Haircut & Styling<br>
+	                <input type="radio" name="content" value="content"> Haircut & Styling<br>
                         <input type="radio" name="content" value="content"> Haircut & Styling & Colouring<br>
                     </div>
                 </div>
@@ -142,21 +142,26 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <input type="text" name="answer" placeholder="Name"><br>
+			    <br>
                         <input type="text" name="answer" placeholder="Email"><br>
+			    <br>
                         <input type="text" name="answer" placeholder="Phone"><br>
                     </div>
                 </div>
 	    </div>
 	    <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Enter Payment Information</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsePaymentInfo">Enter Payment Information</a>
                 </div>
-                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
-		    <img src="images/creditcard.png" alt="card" style="width:30px;">
+                <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
+			<input type="radio" name="content" value="content"><img src="images/creditcard.png" alt="card" style="width:30px;"> Credit Card<br>
 			<input type="text" name="answer" placeholder="Cardholder's Name"><br>
+			    <br>
                         <input type="text" name="answer" placeholder="Credit Card Number"><br>
+			    <br>
                         <input type="text" name="answer" placeholder="Expiry Date"><br>
+			    <br>
                         <input type="text" name="answer" placeholder="CVV"><br>
                     </div>
                 </div>
