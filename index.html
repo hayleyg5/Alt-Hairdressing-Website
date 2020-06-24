@@ -129,7 +129,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
                         <div class="form-group row">
                             <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
                             <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2020-06-16T10:00:00" id="dateTimeInput">
+                                <input class="form-control" type="datetime-local" value="2020-06-16T10:00:00" id="dateInput">
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
 			    <br>
                         <input type="text" name="answer" placeholder="Email"><br>
 			    <br>
-                        <input type="text" name="answer" placeholder="Phone"><br>
+                        <input type="text" id="phone" name="answer" placeholder="Phone"><br>
                     </div>
                 </div>
 	    </div>
@@ -156,9 +156,10 @@ Updo: https://images-na.ssl-images-amazon.com/images/I/61IGxss1LtL._AC_UX569_.jp
                 <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
 			<input type="radio" name="content" value="content"><img src="images/creditcard.png" alt="card" style="width:30px;"> Credit Card<br>
+			    <br>
 			<input type="text" name="answer" placeholder="Cardholder's Name"><br>
 			    <br>
-                        <input type="text" name="answer" placeholder="Credit Card Number"><br>
+                        <input type="text" id="debit" name="answer" placeholder="Credit Card Number"><br>
 			    <br>
                         <input type="text" name="answer" placeholder="Expiry Date"><br>
 			    <br>
