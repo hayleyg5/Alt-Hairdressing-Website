@@ -7,7 +7,17 @@
 // or numbers
 function validateName(txtName){
     var a = document.getElementById(txtName).value;
-    var filter = /^[A-Za-z]+$/;
+    var filter = /^[a-zA-Z\s]*$/;
+    if (filter.test(a)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function validateEmail(txtEmail){
+    var a = document.getElementById(txtEmail).value;
+    var filter = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if (filter.test(a)){
         return true;
     }else{
@@ -20,6 +30,19 @@ function validatePhone(txtPhone) {
     // This filter asks for something like (12345), so parentheses with any number (at least 1)
     // of digits
     var filter = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function validateCard(txtCard) {
+    var a = document.getElementById(txtCard).value;
+    // This filter asks for something like (12345), so parentheses with any number (at least 1)
+    // of digits
+    var filter = /^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/;
     if (filter.test(a)) {
         return true;
     }
@@ -57,6 +80,17 @@ $(document).ready(function(){
             $("#name").removeClass("error");
         }
     });
+    
+    $("#email").on("change", function(){
+        if (!validateEmail("email")){
+            alert("Wrong format for email");
+            $("#email").val("jane@gmail.com");
+            $("#email").addClass("error");
+        }
+        else {
+            $("#email").removeClass("error");
+        }
+    });
 
     // phone validation, it calls validatePhone
     // and also some feedback as an Alert + putting a value in the input that shows the format required
@@ -70,6 +104,17 @@ $(document).ready(function(){
         }
         else {
             $("#phone").removeClass("error");
+        }
+    });
+    
+    $("#card").on("change", function(){
+        if (!validateCard("card")){
+            alert("Wrong format for credit card");
+            $("#card").val("0000-0000-0000-0000");
+            $("#card").addClass("error");
+        }
+        else {
+            $("#card").removeClass("error");
         }
     });
 
@@ -102,6 +147,14 @@ $(document).ready(function(){
 
     $("#debit").on("mouseleave", function(){
         $("#debit").removeClass("showInput");
+    });
+    
+    $("#name").on("mouseenter", function(){
+        $("#name").addClass("showInput");
+    });
+
+    $("#name").on("mouseleave", function(){
+        $("#name").removeClass("showInput");
     });
   
     // https://jqueryui.com/tooltip/ 
