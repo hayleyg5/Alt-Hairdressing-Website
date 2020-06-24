@@ -54,6 +54,14 @@
    color: black;
 }
 
+.error {
+  color : red;
+}
+
+.showInput {
+  background-color: pink;
+}
+
 #signature {
   text-align: left;
   color: rgb(222,180,222);
