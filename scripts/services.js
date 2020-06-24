@@ -1,5 +1,4 @@
-// Function to verify that the phone number is correct.
-// Here, I validate for (12345), but you have to change that for a phone validation
+// This file was modified from Caroline Barrier's original file
 // Tutorials on Regular expressions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions 
 // https://flaviocopes.com/javascript-regular-expressions/ 
@@ -27,8 +26,6 @@ function validateEmail(txtEmail){
 
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
-    // of digits
     var filter = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
     if (filter.test(a)) {
         return true;
@@ -40,8 +37,6 @@ function validatePhone(txtPhone) {
 
 function validateCard(txtCard) {
     var a = document.getElementById(txtCard).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
-    // of digits
     var filter = /^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/;
     if (filter.test(a)) {
         return true;
